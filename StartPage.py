@@ -103,3 +103,4 @@ class StartPage():
                             1182, 770))  # вливаем размеры и разрешение файла фоновой заливки в переменную bakground
                             sc.blit(field, background)  # говорим показать
                             pygame.display.update()  # первый раз прорисовываем экран
+        pygame.time.delay(20)
