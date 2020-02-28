@@ -7,11 +7,6 @@ from LevelF import LevelFirst
 from LevelS import LevelSECOND
 class StartPage():
     def __init__(self):
-        # WHITE = (255, 255, 255)
-        RED = (225, 0, 50)
-        # GREEN = (0, 225, 0)
-        # BLUE = (0, 0, 225)
-        BLACK = (0, 0, 0)
         pygame.init()  # вызов библиотеки pygame
         pygame.display.set_caption("window")
         sc = pygame.display.set_mode((1188, 746))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
@@ -25,7 +20,6 @@ class StartPage():
         f = 0
         while b:  # заводим бесконечный цикл
             for i in pygame.event.get():
-
                 # pygame.font.init()
                 if i.type == pygame.QUIT:  # нажимаем кнопку закрытия экрана
                     pygame.time.delay(20)
