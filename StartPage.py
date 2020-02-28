@@ -14,12 +14,10 @@ class StartPage():
         BLACK = (0, 0, 0)
         pygame.init()  # вызов библиотеки pygame
         pygame.display.set_caption("window")
-        sc = pygame.display.set_mode(
-            (1188, 746))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
+        sc = pygame.display.set_mode((1188, 746))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
         sc.fill((100, 150, 200))
         field = pygame.image.load('Naca Rodina1.png')  # подгрузка файла для фоновой заливки в переменную fild
-        background = field.get_rect(
-            bottomright=(1188, 746))  # вливаем размеры и разрешение файла фоновой заливки в переменную bakground
+        background = field.get_rect(bottomright=(1188, 746))  # вливаем размеры и разрешение файла фоновой заливки в переменную bakground
         sc.blit(field, background)  # говорим показать
         pygame.display.update()  # первый раз прорисовываем экран
         k = 1
@@ -40,8 +38,7 @@ class StartPage():
                             sc = pygame.display.set_mode((1276,
                                                           724))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
                             # sc.fill((100, 150, 200))
-                            field = pygame.image.load(
-                                'RABOTA PERVAYA.jpg')  # подгрузка файла для фоновой заливки в переменную fild
+                            field = pygame.image.load('RABOTA PERVAYA.jpg')  # подгрузка файла для фоновой заливки в переменную fild
                             background = field.get_rect(bottomright=(
                             1276, 724))  # вливаем размеры и разрешение файла фоновой заливки в переменную bakground
                             sc.blit(field, background)  # говорим показать
@@ -49,11 +46,9 @@ class StartPage():
                         if x > 46 and x < 421 and y > 111 and y < 261:  # это первый уровень субъекты федерации
                             f = 1  # метка первого уровня
                             pygame.init()  # вызов библиотеки pygame
-                            sc = pygame.display.set_mode((1276,
-                                                          724))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
+                            sc = pygame.display.set_mode((1276,724))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
                             # sc.fill((100, 150, 200))
-                            field = pygame.image.load(
-                                '1 level.jpg')  # подгрузка файла для фоновой заливки в переменную fild
+                            field = pygame.image.load('1 level.jpg')  # подгрузка файла для фоновой заливки в переменную fild
                             background = field.get_rect(bottomright=(
                             1276, 724))  # вливаем размеры и разрешение файла фоновой заливки в переменную bakground
                             sc.blit(field, background)  # говорим показать
@@ -61,11 +56,9 @@ class StartPage():
                         if x > 46 and x < 422 and y > 261 and y < 424:  # это второй уровень
                             f = 2
                             pygame.init()  # вызов библиотеки pygame
-                            sc = pygame.display.set_mode((1276,
-                                                          724))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
+                            sc = pygame.display.set_mode((1276,724))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
                             # sc.fill((100, 150, 200))
-                            field = pygame.image.load(
-                                '2 level.jpg')  # подгрузка файла для фоновой заливки в переменную fild
+                            field = pygame.image.load('2 level.jpg')  # подгрузка файла для фоновой заливки в переменную fild
                             background = field.get_rect(bottomright=(
                             1276, 724))  # вливаем размеры и разрешение файла фоновой заливки в переменную bakground
                             f2 = pygame.font.Font(None, 60)
@@ -74,8 +67,7 @@ class StartPage():
                         if x > 47 and x < 423 and y > 426 and y < 582:  # это третий уровень
                             f = 3
                             pygame.init()  # вызов библиотеки pygame
-                            sc = pygame.display.set_mode((1276,
-                                                          724))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
+                            sc = pygame.display.set_mode((1276,724))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
                             # sc.fill((100, 150, 200))
                             field = pygame.image.load(
                                 '3 level.jpg')  # подгрузка файла для фоновой заливки в переменную fild
