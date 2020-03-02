@@ -6,15 +6,18 @@ import time
 from LevelF import LevelFirst
 from LevelS import LevelSECOND
 class StartPage():
-    def __init__(self):
+    def GUI(self, picture):
         pygame.init()  # вызов библиотеки pygame
         pygame.display.set_caption("window")
         sc = pygame.display.set_mode((1188, 746))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
         sc.fill((100, 150, 200))
-        field = pygame.image.load('Naca Rodina1.png')  # подгрузка файла для фоновой заливки в переменную fild
-        background = field.get_rect(bottomright=(1188, 746))  # вливаем размеры и разрешение файла фоновой заливки в переменную bakground
+        field = pygame.image.load(picture)  # подгрузка файла для фоновой заливки в переменную fild
+        background = field.get_rect(
+            bottomright=(1188, 746))  # вливаем размеры и разрешение файла фоновой заливки в переменную bakground
         sc.blit(field, background)  # говорим показать
         pygame.display.update()  # первый раз прорисовываем экран
+    def __init__(self):
+        self.GUI('Naca Rodina1.png')
         k = 1
         b = True
         f = 0
