@@ -5,6 +5,7 @@ import sys
 import time
 from LevelF import LevelFirst
 from LevelS import LevelSECOND
+from LevelT import LevelThird
 class StartPage():
     def GUI(self, picture, display_a, display_b):
         pygame.init()  # вызов библиотеки pygame
@@ -48,14 +49,6 @@ class StartPage():
                             window2 = LevelSECOND()
                             right = LevelSECOND.RightAnsw()
                         if x > 1004 and x < 1256 and y > 605 and y < 705 and f == 3:
-                            pygame.init()  # вызов библиотеки pygame
-                            sc = pygame.display.set_mode((1182,
-                                                          770))  # заводим главный экран и определяем его размеры и загружаем его в переменную sc
-                            # sc.fill((100, 150, 200))
-                            field = pygame.image.load(
-                                'ramka reka.png')  # подгрузка файла для фоновой заливки в переменную fild
-                            background = field.get_rect(bottomright=(
-                            1182, 770))  # вливаем размеры и разрешение файла фоновой заливки в переменную bakground
-                            sc.blit(field, background)  # говорим показать
-                            pygame.display.update()  # первый раз прорисовываем экран
+                            window2 = LevelThird()
+                            right = LevelSECOND.RightAnsw()
         pygame.time.delay(20)

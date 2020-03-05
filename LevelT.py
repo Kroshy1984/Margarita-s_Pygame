@@ -3,7 +3,7 @@ import random
 from  dic import *
 RED = (225, 0, 50)
 BLACK=(0,0,0)
-class LevelFirst():
+class LevelThird():
     def __init__(self):
         self.b=True
         self.k=1
